@@ -1,7 +1,10 @@
+// This is a test program to verify the operation of the filename parser.
+
 #include <stdio.h>
 #include "filename.h"
 #include <string.h>
 
+// count of the number of failed tests
 int errors = 0;
 
 void fail(char * msg)
