@@ -1,0 +1,12 @@
+all: sample
+
+sample:  main.o common.o
+	gcc -o sample main.o common.o
+
+main.o: main.c common.h
+
+common.o: common.c common.h
+
+# clean removes all object files but leaves the executable
+clean:
+	rm -f common.o main.o

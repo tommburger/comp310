@@ -1,0 +1,12 @@
+OBJS = main.o common.o
+all: sample
+
+sample:  $(OBJS)
+	gcc -o sample $(OBJS)
+
+# all objects are dependent upon common.h
+$(OBJS): common.h
+
+# clean removes all object files but leaves the executable
+clean:
+	rm -f $(OBJS)
