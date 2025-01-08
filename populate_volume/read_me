@@ -1,0 +1,6 @@
+The script create_files.bash creates a set of files in the current directory
+This set of files contains files of various sizes and some subdirectories.
+The purpose of this is to have a common set of files that will be created on a
+number of different volumes.
+The helper program build_a_file.c must be compiled and copied into your home
+directory.  This program is used to create large files of exactly a specified size.
